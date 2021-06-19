@@ -54,9 +54,23 @@
   }
 }
 
+@media #{$mq_tab}{
+  .article-body{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .privacy-ttl{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 @media #{$mq_pc}{
   .post-contents{
     margin: 48px 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 

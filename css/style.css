@@ -158,6 +158,13 @@ li {
   max-width: 100%;
 }
 
+@media screen and (min-width: 481px) {
+  .section-ttl span {
+    left: 0;
+    right: 0;
+  }
+}
+
 /*---------------------------------
 
   txt
@@ -166,6 +173,16 @@ li {
 .section-txts {
   padding-top: 28px;
   line-height: 2;
+}
+
+@media screen and (min-width: 481px) {
+  .section-txts {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .center {
+    text-align: center;
+  }
 }
 
 /*---------------------------------
@@ -191,6 +208,61 @@ li {
 
 /*---------------------------------
 
+  responsive
+
+---------------------------------*/
+@media screen and (min-width: 481px) {
+  .responsive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .txt-area {
+    width: 48%;
+  }
+  .img-area {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .responsive {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-top: 48px;
+  }
+}
+
+/*---------------------------------
+
+  flex-items
+
+---------------------------------*/
+@media screen and (min-width: 481px) {
+  .flex-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .flex-items .menu-item {
+    width: 47%;
+  }
+}
+
+/*---------------------------------
+
   header
 
 ---------------------------------*/
@@ -212,6 +284,45 @@ li {
 
 .header-logo {
   width: 200px;
+}
+
+.pc-nav {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    position: fixed;
+    z-index: 100;
+  }
+  .header-inner {
+    max-width: 1440px;
+    padding-right: 5%;
+    padding-left: 5%;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  .header-right {
+    display: none;
+  }
+  .header-logo {
+    width: 250px;
+  }
+  .pc-nav {
+    display: block;
+  }
+  .pc-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #70644F;
+    font-weight: bold;
+  }
+  .pc-nav ul li {
+    margin-left: 24px;
+  }
+  .current-menu-item {
+    border-bottom: 2px solid #70644F;
+  }
 }
 
 /*---------------------------------
@@ -282,7 +393,7 @@ li {
 
 ---------------------------------*/
 .gnav {
-  background: rgba(0, 0, 0, 0.8);
+  background: #040F1C;
   display: none;
   height: 100%;
   position: fixed;
@@ -306,12 +417,12 @@ li {
 }
 
 .gnav__menu__item {
-  margin: 40px 0;
+  margin: 32px 0;
 }
 
 .gnav__menu__item a {
   color: #C9C4B8;
-  font-size: 2em;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 40px;
   text-decoration: none;
@@ -404,6 +515,13 @@ li {
   line-height: 2;
 }
 
+@media screen and (min-width: 481px) {
+  .accordion-area {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 /*---------------------------------
 
   mv
@@ -419,6 +537,18 @@ li {
   margin: 0 auto;
   width: 300px;
   display: none;
+}
+
+@media screen and (min-width: 481px) {
+  .mv {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mv {
+    height: 80vh;
+  }
 }
 
 /*---------------------------------
@@ -480,6 +610,17 @@ li {
   border-top: .1rem solid #132032;
 }
 
+.post-ttl {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 481px) {
+  .post-items {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 /*---------------------------------
 
   cta
@@ -526,6 +667,7 @@ li {
 
 .table table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 .table tr {
@@ -555,6 +697,12 @@ li {
 
 .message {
   padding-top: 4px;
+}
+
+@media screen and (min-width: 481px) {
+  .table table {
+    width: 95%;
+  }
 }
 
 .article-ttl {
@@ -615,9 +763,22 @@ li {
   margin-top: 24px;
 }
 
+@media screen and (min-width: 481px) {
+  .article-body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .privacy-ttl {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .post-contents {
     margin: 48px 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
@@ -687,6 +848,13 @@ li {
   border-radius: 5px;
   color: #fff;
   text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.submit-btn:hover {
+  color: #70644F;
+  background: #ffffff;
 }
 
 @media screen and (min-width: 481px) {
@@ -701,7 +869,8 @@ li {
   }
   .contact-form {
     padding: 48px 5%;
-    max-width: 800px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

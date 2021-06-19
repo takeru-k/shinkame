@@ -4,6 +4,7 @@
   
   table{
     border-collapse: collapse;
+    width: 100%;
   }
 
   tr{
@@ -34,4 +35,12 @@
 
 .message{
   padding-top: 4px;
+}
+
+@media #{$mq_tab}{
+  .table{
+    table{
+      width: 95%;
+    }
+  }
 }

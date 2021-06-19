@@ -16,6 +16,49 @@
 .header-logo{
   width: 200px;
 }
+
+.pc-nav{
+  display: none;
+}
+
+@media #{$mq_pc}{
+  .header{
+    position: fixed;
+    z-index: 100;
+  }
+
+  .header-inner{
+    max-width: 1440px;
+    padding-right: 5%;
+    padding-left: 5%;
+    background: rgba(255,255,255,0.5);
+  }
+
+  .header-right{
+    display: none;
+  }
+
+  .header-logo{
+    width: 250px;
+  }
+
+  .pc-nav{
+    display: block;
+    ul{
+      display: flex;
+      color: $color-main;
+      font-weight: bold;
+      
+      li{
+        margin-left: 24px;
+      }
+    }
+  }
+
+  .current-menu-item{
+    border-bottom: 2px solid $color-main;
+  }
+}
 /*---------------------------------
 
   ハンバーガーメニュー
@@ -80,7 +123,7 @@
 ---------------------------------*/
 
 .gnav{
-    background: rgba(0,0,0,0.8);
+    background: #040F1C;;
     display: none;
     height: 100%;
     position: fixed;
@@ -96,11 +139,11 @@
     width: 100%;
 }
 .gnav__menu__item{
-    margin: 40px 0;
+    margin: 32px 0;
 }
 .gnav__menu__item a{
     color: #C9C4B8;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: bold;
     padding: 40px;
     text-decoration: none;

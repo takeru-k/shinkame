@@ -75,3 +75,10 @@
   padding: 3%;
   line-height: 2;
 }
+
+@media #{$mq_tab}{
+  .accordion-area{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

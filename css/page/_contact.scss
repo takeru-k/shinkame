@@ -63,6 +63,12 @@
   border-radius: 5px;
   color: #fff;
   text-align: center;
+  transition: .5s;
+
+  &:hover{
+    color: $color-main;
+    background: #ffffff;
+  }
 }
 
 @media #{$mq_tab}{
@@ -78,6 +84,7 @@
 
   .contact-form{
     padding: 48px 5%;
-    max-width: 800px;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
