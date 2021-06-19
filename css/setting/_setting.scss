@@ -1,0 +1,108 @@
+/*---------------------------------
+
+  全体共通
+
+---------------------------------*/
+body{
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  color: #C9C4B8;
+  background: #040F1C;
+}
+
+.inner{
+  max-width: 1200px;
+  padding-right: 6%;
+  padding-left: 6%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style: none;
+}
+
+$container_size: 1024px;
+
+$pc: $container_size;
+
+$mq_pc: 'screen and (min-width: #{$container_size})';
+$mq_tab: 'screen and (min-width: 481px)';
+$mq_sp: 'screen and (max-width: 480px)';
+
+$color-main: #70644F;
+$color-sub: #C9C4B8;
+$color-accent: #8D2CAB;
+
+/*---------------------------------
+
+  余白
+
+---------------------------------*/
+.section{
+  padding: 64px 0;
+}
+
+.page-header{
+  padding-top: 48px;
+}
+
+/*---------------------------------
+
+  見出し
+
+---------------------------------*/
+.section-ttl{
+  text-align: center;
+  position: relative;
+  padding-top: 24px;
+  font-size: 1.5em;
+  color: #70644F;
+
+  span{
+    position: absolute;
+    top: -90px;
+    left: -5px;
+    font-size: 8rem;
+    overflow: hidden;
+    font-weight: bold;
+    color: #02a2f7;
+    opacity: 0.1;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+/*---------------------------------
+
+  txt
+
+---------------------------------*/
+.section-txts{
+  padding-top: 28px;
+  line-height: 2;
+}
+
+/*---------------------------------
+
+  link
+
+---------------------------------*/
+.link{
+  text-decoration: underline;
+  text-align: right;
+  padding-top: 20px;
+  display: block;
+}
+
+/*---------------------------------
+
+  img
+
+---------------------------------*/
+.img-area{
+  padding-top: 16px;
+}
