@@ -660,6 +660,22 @@ li {
   opacity: 0.5;
 }
 
+/*---------------------------------
+
+  btn
+
+---------------------------------*/
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid #70644F;
+  background: #70644F;
+  text-align: center;
+  padding: 4px 0;
+  margin-top: 16px;
+}
+
 .table {
   line-height: 2;
   padding-top: 24px;
